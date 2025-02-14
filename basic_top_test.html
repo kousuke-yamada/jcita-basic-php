@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<link rel="stylesheet" type="text/css" href="Sindan/style.css">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>JCITA-BASIC　トップ</title>
+</head>
+<body>
+<div align="center">
+<br/>
+<p class="title">
+<br/><br/>
+個性がわかる心理テスト<br/>
+JCITA - BASIC
+</p>
+<form name="language" onsubmit="return checkText()">
+
+	<!-- ■■■開始ボタン■■■ -->
+	<input id="start_button" type="submit" value="START" />
+	<br/><br/>
+
+	<!-- ■■■言語選択■■■ -->
+	<b><font color="gray">Select language</color></b>
+	<select name="language_type">
+	<option value="Japanese">Japanese　　</option>
+	<option value="Korean">Korean　　</option>
+	</select>
+
+</form>
+
+<script type="text/javascript">
+
+	function checkText(){
+		var lang = document.language.language_type.value;
+
+		//actionメソッドに遷移先のURLを代入する
+		if( lang == "Korean" ){
+			document.language.action = "Sindan/basic_question_Korea.php";
+		}else{
+			document.language.action = "Sindan/basic_question_test.php";
+		}
+	}
+
+</script>
+</div>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="3R7HGSZSQ7PHE">
+<table>
+<tr><td><input type="hidden" name="on0" value="診断回数">診断回数</td></tr><tr><td><select name="os0">
+	<option value="1回">1回 ¥100 JPY</option>
+	<option value="6回">6回 ¥500 JPY</option>
+	<option value="13回">13回 ¥1,000 JPY</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="JPY">
+<input type="image" src="https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+<img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+
+<footer class="footer"><br/>Copyright c BASIC. All rights reserved.</footer>
+</body>
+</html>

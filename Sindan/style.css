@@ -1,0 +1,450 @@
+html {
+	font-family: sans-serif;
+	line-height: 1.15;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	background-image: url("images/background12.jpg");
+	
+}
+
+/* タイトル */
+.title{
+	font-size: 48pt;
+	color : #0000ff;
+	font-weight:bold;
+}
+
+/* フッター */
+.footer{
+  	height: 30px;
+ 	background-color: #000000;
+	position : absolute;
+	bottom: 0px;
+	width : 100%;
+	color: #ffffff;
+	text-align: center;
+	font-size : 8pt;
+}
+
+/* テーブル */
+.th,tr,td{
+	background-color: #ffffff;
+	font-size:20px;
+}
+
+/* タイトル画面のボタン */
+input#start_button {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #FF5722;
+	width: 120px;
+	height: 120px;
+	line-height: 120px;
+	border: double 4px #FF5722;
+	border-radius: 50%;
+	vertical-align: middle;
+	overflow: hidden;
+	transition: .6s;
+	font-size: 22px;
+	background-color: #fff;
+	outline:none;
+}
+input#start_button:hover {
+	transform: rotateY(360deg);
+}
+
+/* [診断する]ボタン */
+input#submit_button {
+     font-size: 14pt;
+     display:block;
+     width: 250px;
+     height:70px;
+     line-height: 70px;
+     color: #FFF;
+     text-decoration: none;
+     text-align: center;
+     background-color: #f39800; /*ボタン色*/
+     border-radius: 5px; /*角丸*/
+     -webkit-transition: all 0.5s;
+     transition: all 0.5s;
+}
+input#submit_button:hover{
+     background-color: #f9c500; /*ボタン色*/
+}
+
+
+/* ラベル */
+label {
+  display: block;
+  font-size:20px;
+  position:relative;
+  padding-left:1em;
+}
+
+/* ラジオボタン */
+label input[type=radio] {
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  margin:auto;
+}
+
+/* 名前入力フォーム */
+.nameform{
+	font-size:14pt;
+	font-weight: bold;
+	margin-left: 5%;
+
+}
+input#namesquare{
+	width: 30%;
+	height:30px;
+
+}
+
+
+/* テーブル */
+td#result{
+	border:1px solid #333;
+	background-color: #ffffff;
+	font-size:12pt;	
+}
+
+
+.sample-box-13 {
+    background-color: #ffffff;
+    border: 2px solid #da4033;
+    border-radius: 4px;
+    margin: 2em 0
+    padding: 2em;
+    position: relative;
+    margin-left:2%;
+    margin-right:2%;
+
+}
+.sample-box-13::before {
+    background-color: #da4033;
+    color: #fff;
+    content: "Point";
+    font-weight: bold;
+    left: 1em;
+    padding: 0 .5em;
+    position: absolute;
+    top: -1em;
+}
+
+/* レーダーチャート */
+.media {
+    background: #FFF;
+    padding: 10px;
+    overflow: hidden;
+}
+.media__image {
+    float: left;
+    margin-right: 10px;
+}
+.media__summary {
+    overflow: hidden;
+}
+.media__heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.media__text {
+    font-size: 18px;
+}
+
+/* タイトル付　枠（影）2　*/
+.kakomi-box13 {
+ position: relative;
+ margin: 2em auto;
+ padding: 1.2em;
+ width: 90%;
+ color: #555555; /* 文字色 */
+ background-color: #fff;
+ border: 2px solid #f09199; /* 枠線の太さ・色 */
+ box-shadow: 0 0 5px 2px #fce2c4 inset;/* 影の色 */
+}
+.title-box13 {
+ position: absolute;
+ padding: 0 .5em;
+ left: 20px;
+ top: -15px;
+ font-size: 20pt;	
+ font-weight: bold;
+ background-color:  #fff; /* タイトル背景色 */
+ color: #f09199; /* タイトル文字色 */
+}
+
+/* 黒板風　タイトル　2 */
+.kokuban-t2 {
+ position: relative;
+ margin: 2em auto;
+ padding: 3.2em 1em 1em;
+ width: 90%; /* ボックス幅 */
+ background-color: #006633; /* ボックス背景色 */
+ color: #fff; /* 文章色 */
+ border: 8px solid #b2771f; /* 枠線 */
+ border-radius: 3px; /* 角の丸み */
+ box-shadow: 0 0 5px #333, 0 0 5px #555 inset;
+}
+.kokuban-t2::before,
+.kokuban-t2::after {
+ position: absolute;
+ content: '';
+ bottom: 0;
+} 
+.kokuban-t2::before {
+ right: 10px;
+ border: solid 3px #fff; /*チョーク（白）*/
+ width: 20px; 
+ border-radius: 3px 2px 0 2px;
+}
+.kokuban-t2::after {
+ right: 40px;
+ border: solid 3px #ffff6b; /*チョーク（黄色）*/
+ width: 15px; 
+ border-radius: 8px 5px 2px 5px;
+}
+.title-t2 {
+ position: absolute;
+ left: 1em;
+ top: .5em;
+ font-weight: bold;
+ font-size: 1.8em;
+ color: #ffff6b; /* タイトル色 */
+}
+
+
+/* 黒板風　タイトル　3 */
+.kokuban-t3 {
+ position: relative;
+ margin: 2em auto;
+ padding: 3.2em 1em 1em;
+ width: 90%; /* ボックス幅 */
+ background-color: #044072; /* ボックス背景色 */
+ color: #fff; /* 文章色 */
+ border: 10px solid #b2771f; /* 枠線 */
+ border-radius: 3px; /* 角の丸み */
+ box-shadow: 0 0 5px #333, 0 0 5px #555 inset;
+}
+.kokuban-t3::before,
+.kokuban-t3::after {
+ position: absolute;
+ content: '';
+ bottom: 0;
+} 
+.kokuban-t3::before {
+ right: 10px;
+ border: solid 3px #ffff6b; /*チョーク（黄色）*/
+ width: 20px; 
+ border-radius: 3px 2px 0 2px;
+}
+.kokuban-t3::after {
+ right: 40px;
+ border: solid 3px #fff; /*チョーク（白）*/
+ width: 15px; 
+ border-radius: 8px 5px 2px 5px;
+}
+.title-t3 {
+ position: absolute;
+ left: 1em;
+ top: .5em;
+ font-weight: bold;
+ font-size: 1.8em;
+ color: #ffff6b; /* タイトル色 */
+}
+
+
+/* 黒板風　タイトル　4 */
+.kokuban-t4 {
+ position: relative;
+ margin: 2em auto;
+ padding: 3.2em 1em 1em;
+ width: 90%; /* ボックス幅 */
+ background-color: #8a2f2e; /* ボックス背景色 */
+ color: #fff; /* 文章色 */
+ border: 9px solid #b2771f; /* 枠線 */
+ border-radius: 3px; /* 角の丸み */
+ box-shadow: 0 0 5px #333, 0 0 5px #555 inset;
+}
+.kokuban-t4::before,
+.kokuban-t4::after {
+ position: absolute;
+ content: '';
+ bottom: 0;
+} 
+.kokuban-t4::before {
+ right: 10px;
+ border: solid 3px #fff; /*チョーク（白）*/
+ width: 20px; 
+ border-radius: 3px 2px 0 2px;
+}
+.kokuban-t4::after {
+ right: 40px;
+ border: solid 3px #ffff6b; /*チョーク（黄色）*/
+ width: 15px; 
+ border-radius: 8px 5px 2px 5px;
+}
+.title-t4 {
+ position: absolute;
+ left: 1em;
+ top: .5em;
+ font-weight: bold;
+ font-size: 1.8em;
+ color: #ffff6b; /* タイトル色 */
+}
+
+/* 黒板風　タイトル　1 */
+.kokuban-t1 {
+ position: relative;
+ margin: 2em auto;
+ padding: 3.2em 1em 1em;
+ width: 90%; /* ボックス幅 */
+ background-color: #202020; /* ボックス背景色 */
+ color: #fff; /* 文章色 */
+ border: 10px solid #8b4513; /* 枠線 */
+ border-radius: 3px; /* 角の丸み */
+ box-shadow: 0 0 5px #333;
+}
+.kokuban-t1::before,
+.kokuban-t1::after {
+ position: absolute;
+ content: '';
+ bottom: 0;
+} 
+.kokuban-t1::before {
+ right: 10px;
+ border: solid 3px #ff7fbf; /*チョーク（ピンク）*/
+ width: 20px; 
+ border-radius: 3px 2px 0 2px;
+}
+.kokuban-t1::after {
+ right: 40px;
+ border: solid 3px #fff; /*チョーク（白）*/
+ width: 15px; 
+ border-radius: 8px 5px 2px 5px;
+}
+.title-t1 {
+ position: absolute;
+ left: 1em;
+ top: .5em;
+ font-weight: bold;
+ font-size: 1.8em;
+ color: #ff7fbf; /* タイトル色 */
+}
+
+.shadow{
+    color: #00BCD4;
+    text-shadow: 2px 2px #fff, 5px 5px rgba(0, 188, 212, 0.4);
+    text-align: center;
+}
+
+
+.border{
+    color: #fff;
+    text-shadow: 1px 1px 1px #ff9800, -1px 1px 1px #ff9800, 1px -1px 1px #ff9800, -1px -1px 1px #ff9800, 1px 1px 1px #ff9800, -1px 1px 1px #ff9800, 1px -1px 1px #ff9800, -1px -1px 1px #ff9800;
+	text-align: center;
+}
+
+.box11{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #5d627b;
+    background: white;
+    border-left: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    width:300px;
+    font-size:14pt;
+    font-weight:bold;
+    margin-left:2%;
+}
+.box11 p {
+    margin: 0; 
+    padding: 0;
+}
+
+
+/* ホワイトボード風　タイトル　3 */
+.wboard-w3 {
+ position: relative;
+ margin: 2em auto;
+ padding: 3em 1em 1em;
+ width: 90%; /* ボックス幅 */
+ background-color: #fff; /* ボックス背景色 */
+ color: #000000; /* 文章色 */
+ border: 5px solid #c6c6c6; /* 枠線 */
+ box-shadow: 0 0 8px #333, 0 0 2px #555 inset;
+}
+.wboard-w3::before,
+.wboard-w3::after {
+ position: absolute;
+ content: '';
+ bottom: 4px;
+ width: 25px; 
+ border-radius: 2px;
+ box-shadow: 1px 1px 3px #666;
+} 
+.wboard-w3::before {
+ right: 60px;
+ border: solid 3px #333; /*飾ペン黒 */
+ transform: rotate(2deg); /*飾ペン角度 */
+}
+.wboard-w3::after {
+ right: 22px;
+ border: solid 3px #ff0000; /*飾ペン赤 */
+ transform: rotate(9deg); /*飾ペン角度 */
+}
+.title-w3 {
+ position: absolute;
+ left: 1em;
+ top: .5em;
+ font-weight: bold;
+ font-size: 1.1em; /* 文字サイズ */
+ color: #ff0000; /* タイトル文字色 */
+ border-style: none none solid;
+ border-color: #ff0000; /*タイトル下線 */
+ border-width: 3px;
+}
+
+
+
+/* ▼タブ */
+#tabcontrol a {
+   display: inline-block;            /* インラインブロック化 */
+   border-width: 1px 1px 0px 1px;    /* 下以外の枠線を引く */
+   border-style: solid;              /* 枠線の種類：実線 */
+   border-color: black;              /* 枠線の色：黒色 */
+   border-radius: 0.75em 0.75em 0 0; /* 枠線の左上角と右上角だけを丸く */
+   padding: 0.75em 1em;              /* 内側の余白 */
+   text-decoration: none;            /* リンクの下線を消す */
+   color: black;                     /* 文字色：黒色 */
+   background-color: white;          /* 背景色：白色 */
+   font-weight: bold;                /* 太字 */
+   position: relative;               /* JavaScriptでz-indexを調整するために必要 */
+}
+/* ▼タブにマウスポインタが載った際（任意） */
+#tabcontrol a:hover {
+   text-decoration: underline;   /* リンクの下線を引く */
+}
+/* ▼タブの中身 */
+#tabbody div {
+   border: 1px solid black; /* 枠線：黒色の実線を1pxの太さで引く */
+   margin-top: -1px;        /* 上側にあるタブと1pxだけ重ねるために「-1px」を指定 */
+   padding: 1em;            /* 内側の余白量 */
+   background-color: white; /* 背景色：白色 */
+   position: relative;      /* z-indexを調整するために必要 */
+   z-index: 0;              /* 重なり順序を「最も背面」にするため */
+}
+/* ▼タブの配色 */
+#tabcontrol a:nth-child(1), #tabbody div:nth-child(1) { background-color: #ffffdd; }/* 1つ目のタブとその中身用の配色 */
+#tabcontrol a:nth-child(2), #tabbody div:nth-child(2) { background-color: #ddffdd; }/* 2つ目のタブとその中身用の配色 */
+#tabcontrol a:nth-child(3), #tabbody div:nth-child(3) { background-color: #ddddff; }/* 3つ目のタブとその中身用の配色 */
+

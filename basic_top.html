@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<link rel="stylesheet" type="text/css" href="Sindan/style.css">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>JCITA-BASIC　トップ</title>
+</head>
+<body>
+<div align="center">
+<br/>
+<p class="title">
+<br/><br/>
+個性がわかる心理テスト<br/>
+JCITA - BASIC
+</p>
+<form name="language" onsubmit="return checkText()">
+	
+	<!-- ■■■開始ボタン■■■ -->
+	<input id="start_button" type="submit" value="START" />
+	<br/><br/>
+	
+	<!-- ■■■言語選択■■■ -->
+	<b><font color="gray">Select language</color></b>
+	<select name="language_type">
+	<option value="Japanese">Japanese　　</option>
+	<option value="Korean">Korean　　</option>
+	</select>
+	
+</form>
+
+<script type="text/javascript">
+
+	function checkText(){
+		var lang = document.language.language_type.value;
+		
+		//actionメソッドに遷移先のURLを代入する
+		if( lang == "Korean" ){
+			document.language.action = "Sindan/basic_question_Korea.php";
+		}else{
+			document.language.action = "Sindan/basic_question.php";
+		}
+	}
+
+</script>
+</div>
+
+<footer class="footer"><br/>Copyright c BASIC. All rights reserved.</footer>
+</body>
+</html>
